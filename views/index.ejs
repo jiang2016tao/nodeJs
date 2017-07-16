@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="./bootstrap.min.css">
+<div>
+    <a href="/">全部相册</a>
+    <a href="#create_file">创建相册</a>
+</div>
+<div id="allAlbum" class="container">
+    <div class="row">
+        <% for(var i = 0 ; i < albums.length ; i++){ %>
+        <div class="col-xs-6 col-md-3">
+            <a href="<%= albums[i] %>" class="thumbnail">
+                <img src="images/wjj.jpg" alt="...">
+            </a>
+            <h4><%= albums[i] %></h4>
+        </div>
+        <% } %>
+    </div>
+</div>
+<div id="create_file">
+    <form>
+        <label>文件夹名称</label>
+        <input type="test">
+        <input type="submit" value="创建">
+    </form>
+</div>
+<script type="application/javascript" href="./jquery-1.7.2.js"></script>
+<script type="application/javascript" href="./bootstrap.min.js"></script>
